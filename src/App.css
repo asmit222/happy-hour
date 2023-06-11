@@ -1,38 +1,56 @@
 .App {
+  /* text-align: center; */
+  height: 100%;
+  width: 100%;
+  background-color: rgba(228, 228, 228, 0.281);
+}
+
+#root {
+  height: 100% !important;
+  /* padding: 5px; */
+}
+
+@font-face {
+  font-family: "Charm-Regular";
+  src: url("./assets/Charm/Charm-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quicksand-VariableFont_wght";
+  src: url("./assets/Quicksand/Quicksand-VariableFont_wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "Quicksand-VariableFont_wght", sans-serif;
+}
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+.dayContainer {
+  /* background-color: rgb(206, 206, 206); */
+  height: 100vh;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.dayTitle {
+  font-size: 2em;
+  padding-top: 1vh !important;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  100% {
+    opacity: 1;
   }
 }
