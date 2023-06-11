@@ -18,24 +18,6 @@ const Saturday: React.FC = () => {
               Saturday Brunchin' - Until 2:30pm ($2 Mimosas, $4 Bloody Marys and
               $4 Red + White Sangria)
             </li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </li>
-        <li>
-          Category 2
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-          </ul>
-        </li>
-        <li>
-          Category 3
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
           </ul>
         </li>
       </ul>
