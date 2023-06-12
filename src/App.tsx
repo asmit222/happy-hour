@@ -39,15 +39,23 @@ const App: React.FC = () => {
     }
   };
 
-  // const getPageStyles = (pageIndex: number) => {
-  //   return {
-  //     transform: `translateX(-${pageIndex * 100}%)`,
-  //   };
-  // };
+  const getDayOfWeek = (): number => {
+    const currentDate = new Date();
+    let dayOfWeek = currentDate.getDay();
+
+    // Adjust Sunday to be 6 instead of 0
+    if (dayOfWeek === 0) {
+      dayOfWeek = 6;
+    } else {
+      dayOfWeek -= 1;
+    }
+
+    return dayOfWeek;
+  };
 
   useEffect(() => {
-    console.log("currentPage: " + currentPage);
-  }, [currentPage]);
+    setCurrentPage(getDayOfWeek());
+  }, []);
 
   return (
     <div
