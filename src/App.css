@@ -2,7 +2,7 @@
   /* text-align: center; */
   height: 100%;
   width: 100%;
-  background-color: rgba(228, 228, 228, 0.281);
+  background-color: rgba(117, 117, 117, 0.308);
 }
 
 #root {
@@ -30,7 +30,8 @@
 
 body {
   height: 100vh;
-  padding: 3px;
+  padding-right: 3px;
+  padding-left: 3px;
   margin: 0;
 }
 
