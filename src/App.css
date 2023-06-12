@@ -30,12 +30,12 @@
 
 body {
   height: 100vh;
-  padding: 0;
+  padding: 3px;
   margin: 0;
 }
 
 .dayContainer {
-  /* background-color: rgb(206, 206, 206); */
+  /* background-color: rgb(199, 255, 211); */
   height: 100vh;
   animation: fadeIn 0.3s ease-in;
 }
