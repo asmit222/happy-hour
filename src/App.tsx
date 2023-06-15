@@ -12,6 +12,27 @@ const App: React.FC = () => {
     touchStartRef.current = event.touches[0].clientX;
   };
 
+  const [dragOffsetX, setDragOffsetX] = useState(0);
+  const handleTouchMove = (event: TouchEvent) => {
+    if (touchStartRef.current !== null) {
+      const touchX = event.touches[0].clientX;
+      const difference = touchStartRef.current - touchX;
+
+      if (Math.abs(difference) > 20) {
+        setDragOffsetX(difference);
+
+        // Apply sliding effect to the container
+        const container = containerRef.current;
+        if (container) {
+          container.style.transform = `translateX(${-difference}px)`;
+          container.style.opacity = String(
+            1 - Math.abs(difference / window.innerWidth)
+          );
+        }
+      }
+    }
+  };
+
   const handleTouchEnd = (event: TouchEvent) => {
     const touchEnd = event.changedTouches[0].clientX;
     const difference = touchStartRef.current! - touchEnd;
@@ -24,10 +45,10 @@ const App: React.FC = () => {
       } else if (currentPage === 6) {
         setCurrentPage(0);
       }
-      setShowPage(false);
+      containerRef.current?.classList.add("slide-left");
       setTimeout(() => {
-        setShowPage(true);
-      }, 5);
+        containerRef.current?.classList.remove("slide-left");
+      }, 300);
     } else if (difference < -threshold) {
       // Swipe left to right (previous page)
       if (currentPage > 0) {
@@ -35,11 +56,24 @@ const App: React.FC = () => {
       } else if (currentPage === 0) {
         setCurrentPage(6);
       }
-      setShowPage(false);
+      containerRef.current?.classList.add("slide-right");
       setTimeout(() => {
-        setShowPage(true);
-      }, 5);
+        containerRef.current?.classList.remove("slide-right");
+      }, 300);
     }
+
+    // Reset the sliding effect
+    setDragOffsetX(0);
+    const container = containerRef.current;
+    if (container) {
+      container.style.transform = "";
+      container.style.opacity = "";
+    }
+
+    setShowPage(false);
+    setTimeout(() => {
+      setShowPage(true);
+    }, 5);
   };
 
   const getDayOfWeek = (): number => {
@@ -65,6 +99,7 @@ const App: React.FC = () => {
       className="App"
       ref={containerRef}
       onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
       <div className="pages">

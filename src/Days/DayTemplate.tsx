@@ -59,7 +59,7 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
             })}
           </ul>
         )}
-        <hr className="Hdivider"></hr>
+        {/* <hr className="Hdivider"></hr> */}
       </div>
     );
   });
