@@ -70,7 +70,7 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
     <div className="dayContainer">
       {happyHours}
 
-      <div className="dayTitle">{dayName}</div>
+      <div className={`dayTitle${currDay.toString()}`}>{dayName}</div>
     </div>
   );
 };
