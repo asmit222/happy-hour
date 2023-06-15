@@ -1,12 +1,6 @@
 import React, { useState, useRef, TouchEvent, useEffect } from "react";
 import "./App.css";
-import Monday from "./Days/Monday";
-import Tuesday from "./Days/Tuesday";
-import Wednesday from "./Days/Wednesday";
-import Thursday from "./Days/Thursday";
-import Friday from "./Days/Friday";
-import Saturday from "./Days/Saturday";
-import Sunday from "./Days/Sunday";
+import DayTemplate from "./Days/DayTemplate";
 
 const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -65,13 +59,7 @@ const App: React.FC = () => {
       onTouchEnd={handleTouchEnd}
     >
       <div className="pages">
-        {currentPage === 0 && <Monday />}
-        {currentPage === 1 && <Tuesday />}
-        {currentPage === 2 && <Wednesday />}
-        {currentPage === 3 && <Thursday />}
-        {currentPage === 4 && <Friday />}
-        {currentPage === 5 && <Saturday />}
-        {currentPage === 6 && <Sunday />}
+        <DayTemplate currDay={currentPage} />
       </div>
     </div>
   );

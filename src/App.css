@@ -2,7 +2,11 @@
   /* text-align: center; */
   height: 100%;
   width: 100%;
-  background-color: rgba(117, 117, 117, 0.308);
+  background-color: rgba(255, 255, 255, 0.309);
+}
+
+* {
+  background-color: rgba(255, 255, 255, 0.402);
 }
 
 #root {
@@ -39,12 +43,25 @@ body {
   /* background-color: rgb(199, 255, 211); */
   height: 100vh;
   animation: fadeIn 0.3s ease-in;
+  padding-bottom: 10vh;
+  padding-top: 55px;
+}
+
+.happyHoursContainer {
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 .dayTitle {
   font-size: 2em;
   padding-top: 1vh !important;
   text-align: center;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  background-color: rgb(70, 209, 255);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
 }
 
 @keyframes fadeIn {
@@ -54,4 +71,14 @@ body {
   100% {
     opacity: 1;
   }
+}
+
+.restaurantTitle {
+  font-size: large;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.Hdivider {
+  opacity: 0.6;
 }
