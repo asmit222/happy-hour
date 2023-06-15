@@ -49,7 +49,7 @@ const DistanceSlider: React.FC<{
           );
         } else if (permissionStatus.state === "denied") {
           // User has denied permission
-          alert("You must enable location sharing to use this feature.");
+          // alert("You must enable location sharing to use this feature.");
           console.log("User has denied geolocation permission");
           return;
         }
