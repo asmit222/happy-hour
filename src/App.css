@@ -169,3 +169,17 @@ a {
   position: relative;
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
 }
+
+.distanceSlider {
+  margin-top: 3vh;
+  /* width: 90%; */
+  margin-bottom: -3vh;
+}
+
+.distanceSlider input {
+  width: 100%;
+}
+
+.happyHourRadiusText {
+  margin-bottom: 1vh;
+}

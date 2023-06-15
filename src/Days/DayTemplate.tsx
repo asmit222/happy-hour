@@ -1,9 +1,11 @@
 import React, { useState, useRef, TouchEvent, useEffect } from "react";
 import data from "../utils/data.js";
+import DistanceSlider from "../components/DistanceSlider";
 
 const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
   const [happyHourData, setHappyHourData]: any = useState([]);
   const [dayName, setDayName]: any = useState("");
+  const [distance, setDistance] = useState(0);
 
   useEffect(() => {
     setHappyHourData(data.data);
@@ -12,6 +14,12 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
   useEffect(() => {
     setDayName(getDayOfWeek(currDay));
   }, [currDay]);
+
+  const handleSliderChange = (event) => {
+    const selectedDistance = Number(event.target.value);
+    setDistance(selectedDistance);
+    localStorage.setItem("selectedDistance", selectedDistance.toString());
+  };
 
   const getDayOfWeek = (number: number) => {
     const daysOfWeek = [
@@ -73,6 +81,8 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
 
   return (
     <div className="dayContainer">
+      <DistanceSlider distance={distance} setDistance={setDistance} />
+
       {happyHours}
 
       <div className={`dayTitle${currDay.toString()}`}>{dayName}</div>
