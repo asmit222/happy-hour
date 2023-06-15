@@ -48,7 +48,7 @@ module.exports = {
         },
       ],
       Saturday: [
-        "Saturday Brunchin' - Until 2:Thursday0pm ($2 Mimosas, $4 Bloody Marys and $4 Red + White Sangria)",
+        "Saturday Brunchin' - Until 2:30pm ($2 Mimosas, $4 Bloody Marys and $4 Red + White Sangria)",
       ],
       Sunday: [],
     },
