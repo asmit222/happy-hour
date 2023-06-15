@@ -1,6 +1,7 @@
 import React, { useState, useRef, TouchEvent, useEffect } from "react";
 import data from "../utils/data.js";
 import DistanceSlider from "../components/DistanceSlider";
+import EmailButton from "../components/EmailButton";
 
 const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
   const [happyHourData, setHappyHourData]: any = useState([]);
@@ -86,6 +87,7 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
       {happyHours}
 
       <div className={`dayTitle${currDay.toString()}`}>{dayName}</div>
+      <EmailButton />
     </div>
   );
 };
