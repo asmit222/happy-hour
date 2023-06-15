@@ -33,34 +33,36 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
 
   const happyHours = happyHourData.map((restaurant) => {
     return (
-      <div className="happyHoursContainer">
-        <div className="restaurantTitle">
-          <a href={restaurant.link} target="_blank" rel="noopener noreferrer">
-            {restaurant.name}
-          </a>
+      restaurant[currDay].length !== 0 && (
+        <div className="happyHoursContainer">
+          <div className="restaurantTitle">
+            <a href={restaurant.link} target="_blank" rel="noopener noreferrer">
+              {restaurant.name}
+            </a>
+          </div>
+          {restaurant[currDay] && (
+            <ul>
+              {restaurant[currDay].map((item) => {
+                if (typeof item === "string") {
+                  return <li>{item}</li>;
+                } else {
+                  return (
+                    <li>
+                      {Object.keys(item)[0]}
+                      <ul>
+                        {item[Object.keys(item)[0]].map((value: any) => {
+                          return <li>{value}</li>;
+                        })}
+                      </ul>
+                    </li>
+                  );
+                }
+              })}
+            </ul>
+          )}
+          {/* <hr className="Hdivider"></hr> */}
         </div>
-        {restaurant[currDay] && (
-          <ul>
-            {restaurant[currDay].map((item) => {
-              if (typeof item === "string") {
-                return <li>{item}</li>;
-              } else {
-                return (
-                  <li>
-                    {Object.keys(item)[0]}
-                    <ul>
-                      {item[Object.keys(item)[0]].map((value: any) => {
-                        return <li>{value}</li>;
-                      })}
-                    </ul>
-                  </li>
-                );
-              }
-            })}
-          </ul>
-        )}
-        {/* <hr className="Hdivider"></hr> */}
-      </div>
+      )
     );
   });
 
