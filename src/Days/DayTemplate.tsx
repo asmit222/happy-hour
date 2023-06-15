@@ -33,16 +33,16 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
 
   const happyHours = happyHourData.map((restaurant) => {
     return (
-      restaurant[currDay].length !== 0 && (
+      restaurant[getDayOfWeek(currDay)].length !== 0 && (
         <div className="happyHoursContainer">
           <div className="restaurantTitle">
             <a href={restaurant.link} target="_blank" rel="noopener noreferrer">
               {restaurant.name}
             </a>
           </div>
-          {restaurant[currDay] && (
+          {restaurant[getDayOfWeek(currDay)] && (
             <ul>
-              {restaurant[currDay].map((item) => {
+              {restaurant[getDayOfWeek(currDay)].map((item) => {
                 if (typeof item === "string") {
                   return <li>{item}</li>;
                 } else {
