@@ -84,6 +84,12 @@ body {
   font-size: large;
   text-align: center;
   margin-top: 2vh;
+  font-weight: 600;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
 }
 
 .Hdivider {

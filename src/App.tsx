@@ -62,18 +62,11 @@ const App: React.FC = () => {
       }, 300);
     }
 
-    // Reset the sliding effect
-    setDragOffsetX(0);
     const container = containerRef.current;
     if (container) {
       container.style.transform = "";
       container.style.opacity = "";
     }
-
-    setShowPage(false);
-    setTimeout(() => {
-      setShowPage(true);
-    }, 5);
   };
 
   const getDayOfWeek = (): number => {
