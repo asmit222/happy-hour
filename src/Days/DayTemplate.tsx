@@ -36,7 +36,12 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
       restaurant[getDayOfWeek(currDay)].length !== 0 && (
         <div className="happyHoursContainer">
           <div className="restaurantTitle">
-            <a href={restaurant.link} target="_blank" rel="noopener noreferrer">
+            <a
+              className={`anchor${currDay}`}
+              href={restaurant.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {restaurant.name}
             </a>
           </div>
