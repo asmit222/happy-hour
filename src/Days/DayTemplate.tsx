@@ -81,7 +81,7 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
 
   return (
     <div className="dayContainer">
-      <DistanceSlider distance={distance} setDistance={setDistance} />
+      {/* <DistanceSlider distance={distance} setDistance={setDistance} /> */}
 
       {happyHours}
 
