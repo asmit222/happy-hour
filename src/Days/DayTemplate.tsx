@@ -84,9 +84,9 @@ const DayTemplate: React.FC<{ currDay: number }> = ({ currDay }) => {
     <div className="dayContainer">
       {/* <DistanceSlider distance={distance} setDistance={setDistance} /> */}
 
+      <div className={`dayTitle${currDay.toString()}`}>{dayName}</div>
       {happyHours}
 
-      <div className={`dayTitle${currDay.toString()}`}>{dayName}</div>
       <EmailButton />
     </div>
   );

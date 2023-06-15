@@ -88,7 +88,8 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 50px;
+  height: 70px;
+  margin-top: -5px;
   font-family: "Signika-VariableFont_wght", "Arial Narrow", Arial, sans-serif !important;
   color: rgb(255, 255, 255);
   /* background-color: rgb(42, 0, 0) !important; */
@@ -182,4 +183,41 @@ a {
 
 .happyHourRadiusText {
   margin-bottom: 1vh;
+}
+
+.suggestionInputBox {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  margin-right: 5px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 5px #0066cc;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+input[type="submit"] {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #004499;
 }

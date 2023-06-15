@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
 
 const EmailButton: React.FC = () => {
   const [emailText, setEmailText] = useState("");
@@ -23,8 +24,15 @@ const EmailButton: React.FC = () => {
 
   return (
     <div>
-      <input type="text" value={emailText} onChange={handleInputChange} />
-      <button onClick={handleEmailSend}>Suggest a Restaurant</button>
+      <input
+        className="suggestionInputBox"
+        type="text"
+        value={emailText}
+        onChange={handleInputChange}
+      />
+      <Button variant="primary" onClick={handleEmailSend}>
+        Suggest a Restaurant
+      </Button>
     </div>
   );
 };
