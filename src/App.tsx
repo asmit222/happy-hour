@@ -6,6 +6,7 @@ const App: React.FC = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
   const touchStartRef = useRef<number | null>(null);
+  const [showPage, setShowPage] = useState(true);
 
   const handleTouchStart = (event: TouchEvent) => {
     touchStartRef.current = event.touches[0].clientX;
@@ -23,6 +24,10 @@ const App: React.FC = () => {
       } else if (currentPage === 6) {
         setCurrentPage(0);
       }
+      setShowPage(false);
+      setTimeout(() => {
+        setShowPage(true);
+      }, 5);
     } else if (difference < -threshold) {
       // Swipe left to right (previous page)
       if (currentPage > 0) {
@@ -30,6 +35,10 @@ const App: React.FC = () => {
       } else if (currentPage === 0) {
         setCurrentPage(6);
       }
+      setShowPage(false);
+      setTimeout(() => {
+        setShowPage(true);
+      }, 5);
     }
   };
 
@@ -59,7 +68,7 @@ const App: React.FC = () => {
       onTouchEnd={handleTouchEnd}
     >
       <div className="pages">
-        <DayTemplate currDay={currentPage} />
+        {showPage && <DayTemplate currDay={currentPage} />}
       </div>
     </div>
   );
