@@ -291,5 +291,124 @@ module.exports = {
       Saturday: [],
       Sunday: [],
     },
+    {
+      name: "Irish31",
+      link: "https://irish31.com/menu/#happyhour",
+      Monday: [
+        {
+          "Happy hour Mon-Fri 3-7": [
+            "$3.10 Select Domestic Drafts",
+            "$1.00 Off all other Drafts",
+            "2-4-1 Well Drinks",
+            "$1.00 Off all Call Drinks",
+            "Half Off all House Wines",
+          ],
+        },
+        {
+          "All Day Every Day Specials": [
+            "$4.00 Irish 31 Red Ale | Yuengling Light Bottles",
+            "$7.00 I31 Whiskey | Captain Morgan Spiced Rum",
+            "$6.00 Jim Beam Bourbon | Smirnoff Vodka | Smirnoff Vodka Flavors",
+            "$8.00 Tito's Handmade Vodka | Ketel One Vodka | Ketel One Citroen | Ketel One Oranje | Nolet's Silver Gin | Crown Royal Whisky",
+          ],
+        },
+      ],
+      Tuesday: [
+        {
+          "Happy hour Mon-Fri 3-7": [
+            "$3.10 Select Domestic Drafts",
+            "$1.00 Off all other Drafts",
+            "2-4-1 Well Drinks",
+            "$1.00 Off all Call Drinks",
+            "Half Off all House Wines",
+          ],
+        },
+        {
+          "All Day Every Day Specials": [
+            "$4.00 Irish 31 Red Ale | Yuengling Light Bottles",
+            "$7.00 I31 Whiskey | Captain Morgan Spiced Rum",
+            "$6.00 Jim Beam Bourbon | Smirnoff Vodka | Smirnoff Vodka Flavors",
+            "$8.00 Tito's Handmade Vodka | Ketel One Vodka | Ketel One Citroen | Ketel One Oranje | Nolet's Silver Gin | Crown Royal Whisky",
+          ],
+        },
+      ],
+      Wednesday: [
+        {
+          "Happy hour Mon-Fri 3-7": [
+            "$3.10 Select Domestic Drafts",
+            "$1.00 Off all other Drafts",
+            "2-4-1 Well Drinks",
+            "$1.00 Off all Call Drinks",
+            "Half Off all House Wines",
+          ],
+        },
+        {
+          "All Day Every Day Specials": [
+            "$4.00 Irish 31 Red Ale | Yuengling Light Bottles",
+            "$7.00 I31 Whiskey | Captain Morgan Spiced Rum",
+            "$6.00 Jim Beam Bourbon | Smirnoff Vodka | Smirnoff Vodka Flavors",
+            "$8.00 Tito's Handmade Vodka | Ketel One Vodka | Ketel One Citroen | Ketel One Oranje | Nolet's Silver Gin | Crown Royal Whisky",
+          ],
+        },
+      ],
+      Thursday: [
+        {
+          "Happy hour Mon-Fri 3-7": [
+            "$3.10 Select Domestic Drafts",
+            "$1.00 Off all other Drafts",
+            "2-4-1 Well Drinks",
+            "$1.00 Off all Call Drinks",
+            "Half Off all House Wines",
+          ],
+        },
+        {
+          "All Day Every Day Specials": [
+            "$4.00 Irish 31 Red Ale | Yuengling Light Bottles",
+            "$7.00 I31 Whiskey | Captain Morgan Spiced Rum",
+            "$6.00 Jim Beam Bourbon | Smirnoff Vodka | Smirnoff Vodka Flavors",
+            "$8.00 Tito's Handmade Vodka | Ketel One Vodka | Ketel One Citroen | Ketel One Oranje | Nolet's Silver Gin | Crown Royal Whisky",
+          ],
+        },
+      ],
+      Friday: [
+        {
+          "Happy hour Mon-Fri 3-7": [
+            "$3.10 Select Domestic Drafts",
+            "$1.00 Off all other Drafts",
+            "2-4-1 Well Drinks",
+            "$1.00 Off all Call Drinks",
+            "Half Off all House Wines",
+          ],
+        },
+        {
+          "All Day Every Day Specials": [
+            "$4.00 Irish 31 Red Ale | Yuengling Light Bottles",
+            "$7.00 I31 Whiskey | Captain Morgan Spiced Rum",
+            "$6.00 Jim Beam Bourbon | Smirnoff Vodka | Smirnoff Vodka Flavors",
+            "$8.00 Tito's Handmade Vodka | Ketel One Vodka | Ketel One Citroen | Ketel One Oranje | Nolet's Silver Gin | Crown Royal Whisky",
+          ],
+        },
+      ],
+      Saturday: [
+        {
+          "All Day Every Day Specials": [
+            "$4.00 Irish 31 Red Ale | Yuengling Light Bottles",
+            "$7.00 I31 Whiskey | Captain Morgan Spiced Rum",
+            "$6.00 Jim Beam Bourbon | Smirnoff Vodka | Smirnoff Vodka Flavors",
+            "$8.00 Tito's Handmade Vodka | Ketel One Vodka | Ketel One Citroen | Ketel One Oranje | Nolet's Silver Gin | Crown Royal Whisky",
+          ],
+        },
+      ],
+      Sunday: [
+        {
+          "All Day Every Day Specials": [
+            "$4.00 Irish 31 Red Ale | Yuengling Light Bottles",
+            "$7.00 I31 Whiskey | Captain Morgan Spiced Rum",
+            "$6.00 Jim Beam Bourbon | Smirnoff Vodka | Smirnoff Vodka Flavors",
+            "$8.00 Tito's Handmade Vodka | Ketel One Vodka | Ketel One Citroen | Ketel One Oranje | Nolet's Silver Gin | Crown Royal Whisky",
+          ],
+        },
+      ],
+    },
   ],
 };
