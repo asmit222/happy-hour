@@ -51,10 +51,11 @@ body {
 }
 
 .happyHoursContainer {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 20px;
   width: 90%;
   margin-top: 5vh;
+  background-color: rgb(253, 253, 253);
 }
 
 .dayTitle {
